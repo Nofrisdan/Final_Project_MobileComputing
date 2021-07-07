@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.mobilecomputing.responsi">
+
+<!--    internet permission-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="id.mobilecomputing.responsi.SplashScreenActivity2"></activity>
+        <activity android:name="id.mobilecomputing.responsi.AboutActivity"
+            android:label="About Us"/>
+        <activity android:name="id.mobilecomputing.responsi.aplikasiberita.Kategori.TechnologyActivity"
+            android:label="Berita (Teknologi)"/>
+        <activity android:name="id.mobilecomputing.responsi.aplikasiberita.Kategori.SportActivity"
+            android:label="Berita (Olahraga)"/>
+        <activity android:name="id.mobilecomputing.responsi.aplikasiberita.Kategori.ScienceActivity"
+            android:label="Berita (Ilmu Pengetahuan)"/>
+        <activity android:name="id.mobilecomputing.responsi.aplikasiberita.Kategori.HealthActivity"
+            android:label="Berita (Kesehatan)"/>
+        <activity android:name="id.mobilecomputing.responsi.aplikasiberita.Kategori.EnternainmentActivity"
+            android:label="Berita (Hiburan)"/>
+        <activity android:name="id.mobilecomputing.responsi.aplikasiberita.Kategori.BusinessActivity"
+            android:label="Berita (Bisnis)"/>
+        <activity android:name="id.mobilecomputing.responsi.aplikasiberita.Activity.DetailActivity"
+            android:label="Detail Berita"/>
+        <activity android:name="id.mobilecomputing.responsi.aplikasiberita.Activity.MainActivity"
+            android:label="Kategori Berita"/>
+        <activity
+            android:name="id.mobilecomputing.responsi.DasboardActivity"
+            android:label="Dashboard Aplikasi" />
+        <activity
+            android:name="id.mobilecomputing.responsi.auth.RegisterActivity"
+            android:label="Register (Daftar Akun)"
+            android:parentActivityName="id.mobilecomputing.responsi.auth.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="id.mobilecomputing.responsi.auth.LoginActivity" />
+        </activity>
+        <activity
+            android:name="id.mobilecomputing.responsi.auth.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Login Aplikasi"/>
+        <activity android:name="id.mobilecomputing.responsi.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
